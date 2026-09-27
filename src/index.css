@@ -180,6 +180,85 @@ a:hover {
   text-align: right;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  padding: 16px 0;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--text-h);
+}
+
+.hero {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 80px 64px 32px;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: auto 0;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(64px, 10vw, 140px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.hero-subtitle {
+  margin-top: 24px;
+  font-size: 1.3rem;
+}
+
+.hero-about {
+  max-width: 650px;
+  margin-top: 48px;
+}
+
+.scroll-cue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+
+  color: var(--text);
+  text-decoration: none;
+
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.scroll-arrow {
+  font-size: 1.5rem;
+}
+
+.home-cv {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 768px) {
   .cv-section {
     grid-template-columns: 1fr;
@@ -191,3 +270,83 @@ a:hover {
   }
 }
 
+@page {
+  size: letter;
+  margin: 0.6in;
+}
+
+@media print {
+  /* Hide everything by default */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Show only the CV section */
+  .home-cv,
+  .home-cv * {
+    visibility: visible;
+  }
+
+  /* Move the CV to the top-left of the printed page */
+  .home-cv {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+  }
+
+  /* Hide website-only elements */
+  nav,
+  .hero,
+  .scroll-cue,
+  .pdf-button {
+    display: none !important;
+  }
+
+  /* Remove dotted background */
+  html,
+  body,
+  :root {
+    background: white !important;
+    background-image: none !important;
+  }
+
+  #root {
+    width: 100%;
+    max-width: none;
+    min-height: auto;
+    margin: 0;
+  }
+
+  /* Sticky headings should behave normally on paper */
+  .cv-section-title {
+    position: static;
+  }
+
+  /* Keep individual entries together when possible */
+  .cv-section-content article {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Clean print colors */
+  h1,
+  h2,
+  h3,
+  p,
+  span,
+  strong,
+  a {
+    color: black !important;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+}

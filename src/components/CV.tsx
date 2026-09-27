@@ -28,27 +28,9 @@ function isJenRogers(author: string): boolean {
   );
 }
 
-function CV() {
+function CVContent() {
   return (
-    <main className="cv-page">
-      <header className="cv-header">
-  <h1>Jen Rogers</h1>
-
-  <div className="cv-contact">
-    <a href="mailto:jennifer.rogers@inl.gov">
-      jennifer.rogers@inl.gov
-    </a>
-
-    <a
-      href="https://github.com/jrogerthat"
-      target="_blank"
-      rel="noreferrer"
-    >
-      github.com/jrogerthat
-    </a>
-  </div>
-</header>
-
+    <div className="cv-content">
       <section className="cv-section">
         <div className="cv-section-title">
           <h2>EXPERIENCE</h2>
@@ -67,8 +49,8 @@ function CV() {
               </p>
 
               {item.description && (
-  <p className="cv-description">{item.description}</p>
-)}
+                <p className="cv-description">{item.description}</p>
+              )}
             </article>
           ))}
         </div>
@@ -127,8 +109,8 @@ function CV() {
           ))}
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 
-export default CV;
+export default CVContent;
