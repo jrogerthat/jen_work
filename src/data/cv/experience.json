@@ -1,0 +1,79 @@
+[
+  {
+    "position": "Lead Developer",
+    "institution": "Project Alexandria, DOE",
+    "dates": [2025, "Present"],
+    "description": "Core development for a data management platform ensuring governance in collaborative work in non-proliferation. Project Alexandria is a cross-laboratory effort, involving Idaho National Lab, National Energy Technology Lab, Sandia National Lab, Los Alamos National Lab, Lawrence Livermore National Lab, Brookhaven National Lab, and Oak Ridge National Lab."
+  },
+  {
+    "position": "Front-End Developer and UI Design",
+    "institution": "DeepLynx, Idaho National Lab",
+    "dates": [2025, "Present"],
+    "description": "Digital engineering integration framework designed to improve efficiency in megaproject management and digital twins."
+  },
+  {
+    "position": "Visualization Engineer and Researcher",
+    "institution": "Idaho National Lab",
+    "location": "Idaho Falls, ID",
+    "dates": [2024, "Present"],
+    "description": "Visualization engineering and research in the Applied Visualization Lab, Scientific Visualization."
+  },
+  {
+    "position": "Invited Guest",
+    "institution": "ELLIIT Symposium on Visualization-Empowered Human-in-the-Loop Artificial Intelligence",
+    "location": "Norrköping, Sweden",
+    "dates": [2025],
+    "description": "International scholars, ELLIIT researchers and other well-established international academics gathered in Norrköping to work together in joint research challenges in Visualization-Empowered HITL AI."
+  },
+  {
+    "position": "Program Chair (Main Track and Short Papers)",
+    "institution": "IEEE VIS",
+    "dates": [2025],
+    "description": "Primary reviewer for papers submitted to IEEE VIS 2025."
+  },
+  {
+    "position": "Abstract Chair",
+    "institution": "BioVis@ISMB",
+    "dates": [2025],
+    "description": "Determine poster, papers, and schedule for BioVis@ISMB 2025."
+  },
+  {
+    "position": "Dagstuhl Attendee",
+    "institution": "Human-Centered Approaches for Provenance in Automated Data Science",
+    "location": "Wandern, Saarland, Germany",
+    "dates": [2023],
+    "description": "Week-long seminar exploring human factors in automated data science and autoML."
+  },
+  {
+    "position": "Organizer",
+    "institution": "NSF Workshop on Visualization and Analysis of High-Dimensional Data",
+    "location": "Boston, MA",
+    "dates": [2023],
+    "description": "Organizer of a three-day workshop bringing together a variety of scientific domains to write a grand challenge report defining overarching opportunities to improve visualization of high-dimensional data."
+  },
+  {
+    "position": "Postdoctoral Researcher",
+    "institution": "Tufts University",
+    "location": "Medford, MA",
+    "dates": [2022, 2024],
+    "description": "Research involving high-dimensional data visualization, perceived control, and human factors in AI/ML."
+  },
+  {
+    "position": "Research Intern",
+    "institution": "Tableau, Salesforce",
+    "dates": [2021],
+    "description": "Worked on traceability for autoML. Developed taxonomy to characterize artifacts emergent from this process and a prototype to visualize the attributes, dependencies, and histories of these captured artifacts."
+  },
+  {
+    "position": "Visiting Researcher",
+    "institution": "Harmon Lab, University of Idaho",
+    "dates": [2019],
+    "description": "Worked closely with researchers in comparative evolutionary biology to design and develop a tool for visual analysis of phylogenetic tree data."
+  },
+  {
+    "position": "Research Assistant",
+    "institution": "Scientific Computing and Imaging Institute, University of Utah",
+    "dates": [2017, 2022],
+    "description": "Research in web-based visual applications tailored for biological data at the Scientific Computing and Imaging Institute."
+  }
+]
