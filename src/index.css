@@ -1,6 +1,7 @@
 :root {
-  --text-h: #08060d;
-  --text-body: #5f5968;
+  --text-h: #1e1e01;
+  /* #08060d; */
+  --text-body: #1c1c02;
   --text-muted: #8b8590;
   --bg: #fffff7;
   --border: #e5e4e7;
@@ -92,6 +93,44 @@ a:hover {
 
 /* ---------- Navigation ---------- */
 
+.navbar-shell {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+
+  margin-left: calc(50% - 50vw);
+
+  background: transparent;
+
+  transition: background-color 0.25s ease;
+}
+
+.navbar-shell.stuck {
+  background: var(--text-h);
+}
+
+.navbar {
+  max-width: 1126px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 56px;
+
+  padding: 24px 15px;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  color: var(--text-body);
+  text-decoration: none;
+}
+
+.navbar-shell.stuck .navbar a {
+  color: white;
+}
+
 nav {
   width: 100%;
   max-width: var(--page-width);
@@ -124,7 +163,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: space-between;
   /* padding: 80px 64px 32px; */
-  padding: 80px 14px 32px;
+  padding: 80px 10px 32px;
   box-sizing: border-box;
 }
 
