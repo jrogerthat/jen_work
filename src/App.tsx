@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.tsx";
-import Projects from "./pages/Projects.tsx";
-import About from "./pages/About.tsx";
+import What from "./pages/What.tsx";
+import Where from "./pages/Where.tsx";
 import Navbar from "./components/Navbar.tsx";
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/what" element={<What />} />
+        <Route path="/where" element={<Where />} />
       </Routes>
     </>
   );

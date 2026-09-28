@@ -1,0 +1,44 @@
+{
+  "Programming Languages": [
+    {
+      "name": "JavaScript/TypeScript",
+      "rating": 5
+    },
+    {
+      "name": "Python",
+      "rating": 3
+    },
+    {
+      "name": "Elixir",
+      "rating": 4
+    },
+    {
+      "name": "C#",
+      "rating": 2
+    }
+  ],
+  "Frameworks & Libraries": [
+    {
+      "name": "D3.js",
+      "rating": 5
+    },
+    {
+      "name": "Phoenix",
+      "rating": 4
+    },
+    {
+      "name": "React",
+      "rating": 5
+    },
+    {
+      "name": ".NET",
+      "rating": 2
+    }
+  ],
+  "Systems & Design": [
+{"name": "Requirements Gathering", "rating": 4},
+{"name": "Software Architecture", "rating": 2},
+{"name": "UX/UI Design", "rating": 5},
+{"name": "Workflow Design", "rating": 3}
+  ]
+}

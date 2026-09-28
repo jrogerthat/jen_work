@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Traceability",
+    "description": "Understanding and communicating how data, decisions, and artifacts evolve through complex analytical and human-AI workflows."
+  },
+  {
+    "title": "Data Ingestion & Governance",
+    "description": "Designing systems for ingesting, organizing, governing, and making large scientific datasets discoverable and usable."
+  },
+  {
+    "title": "Applied Visualization",
+    "description": "Designing interactive visual interfaces that help domain experts explore, understand, and act on complex scientific and engineering data."
+  },
+  {
+    "title": "Human-in-the-Loop AI",
+    "description": "Exploring interfaces and workflows that support meaningful human oversight, interpretation, and intervention in AI-assisted systems."
+  },
+  {
+    "title": "Visual Analytics",
+    "description": "Combining interactive visualization, data analysis, and domain knowledge to support analytical reasoning."
+  },
+  {
+    "title": "Human-Centered Data Systems",
+    "description": "Designing data infrastructure and workflows around the needs of the people who create, manage, analyze, and interpret data."
+  }
+]

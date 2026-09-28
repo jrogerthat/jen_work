@@ -1,21 +1,19 @@
 import CVContent from "../components/CV";
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import CVPdf from "../components/CVPdf";
 
 function Home() {
   return (
     <main>
       <section className="hero">
         <div className="hero-content">
-          <h1>Jen Rogers</h1>
-
-          <p className="hero-subtitle">
-            Visualization Engineer · Researcher · Developer
-          </p>
+       
+          <h1>Hi, I'm Jen.</h1>
 
           <div className="hero-about">
             <p>
-              This is where you can eventually add an introduction,
-              selected work, an image, or whatever you want the landing
-              page to focus on.
+              I'm an engineer and researcher, living in the Tetons. <br/>
+              I work across visualization, software engineering, and human-centered data systems.
             </p>
           </div>
         </div>
@@ -31,8 +29,8 @@ function Home() {
           <h1>Jen Rogers</h1>
 
           <div className="cv-contact">
-            <a href="mailto:jennifer.rogers@inl.gov">
-              jennifer.rogers@inl.gov
+            <a href="mailto:jennifer.rogers1207@gmail.com">
+              jennifer [dot] rogers1207 [at] gmail.com
             </a>
 
             <a
@@ -43,12 +41,15 @@ function Home() {
               github.com/jrogerthat
             </a>
           </div>
-          <button
-      className="pdf-button"
-      onClick={() => window.print()}
-    >
-      Export as PDF
-    </button>
+          <PDFDownloadLink
+  document={<CVPdf />}
+  fileName="Jen_Rogers_CV.pdf"
+  className="pdf-button"
+>
+  {({ loading }) =>
+    loading ? "Preparing PDF..." : "Download PDF"
+  }
+</PDFDownloadLink>
         </header>
 
         <CVContent />
